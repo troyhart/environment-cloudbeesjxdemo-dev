@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/cloudbees/cloudbees-jenkins-x-boot-config.git
+bootConfigURL: https://github.com/troyhart/environment-cloudbeesjxdemo-dev.git
 cluster:
   azure: {}
   environmentGitPublic: true
@@ -9,7 +9,7 @@ cluster:
   gitName: github
   gitServer: https://github.com
   namespace: jx
-  provider: kubernetes
+  provider: openshift
 environments:
 - ingress:
     domain: ""
