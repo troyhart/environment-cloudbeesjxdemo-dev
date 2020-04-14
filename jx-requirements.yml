@@ -4,6 +4,13 @@ autoUpdate:
 bootConfigURL: https://github.com/troyhart/environment-cloudbeesjxdemo-dev.git
 cluster:
   azure: {}
+  clusterName: cloudbeesjxdemo
+  devEnvApprovers:
+  - troyhart
+  - irobertson
+  - jasonholmberg
+  - svanderveen777
+  environmentGitOwner: troyhart
   environmentGitPublic: true
   gitKind: github
   gitName: github
@@ -20,6 +27,7 @@ environments:
       enabled: false
       production: false
   key: dev
+  repository: environment-cloudbeesjxdemo-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -29,6 +37,7 @@ environments:
       enabled: false
       production: false
   key: staging
+  repository: environment-cloudbeesjxdemo-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -38,6 +47,7 @@ environments:
       enabled: false
       production: false
   key: production
+  repository: environment-cloudbeesjxdemo-production
 gitops: true
 ingress:
   domain: ""
@@ -55,19 +65,19 @@ storage:
     enabled: false
     url: ""
   logs:
-    enabled: true
+    enabled: false
     url: ""
   reports:
-    enabled: true
+    enabled: false
     url: ""
   repository:
-    enabled: true
+    enabled: false
     url: ""
 vault: {}
 velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: 2.0.1245+cjxd.8
+  ref: v0.0.29
   url: https://github.com/cloudbees/cloudbees-jenkins-x-versions.git
 webhook: prow
