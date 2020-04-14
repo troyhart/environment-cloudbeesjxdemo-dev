@@ -50,7 +50,7 @@ environments:
   repository: environment-cloudbeesjxdemo-production
 gitops: true
 ingress:
-  domain: ""
+  domain: 10.1.18.121.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
